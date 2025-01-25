@@ -86,4 +86,4 @@ function checkResult() {
 }
 
 start.addEventListener('click', spin);
-start.addEventListener('keydown', spin);
+window.addEventListener('keydown', spin);
