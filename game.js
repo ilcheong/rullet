@@ -1,4 +1,4 @@
-let isSpinning = false;
+let isSpinning = false; //
 
 const slot1 = document.getElementById('slot1');
 const slot2 = document.getElementById('slot2');
