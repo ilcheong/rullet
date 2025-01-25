@@ -36,7 +36,7 @@ function moneyUp(){
 function spin() {
     if (isSpinning) return;
 
-    point1 -= 20;
+    point1 -= 50;
     point.innerHTML = `${point1}`;
     
     isSpinning = true;
@@ -68,13 +68,13 @@ function checkResult() {
     
     if (num1 == num2 && num2 == num3) 
     {
-        alert('축하합니다! 잭팟입니다!\n1000원 획득!');
-        point1 += 1000;
+        alert('축하합니다! 잭팟입니다!\n10000원 획득!');
+        point1 += 10000;
     } 
     else if (num1 == num2 || num2 == num3 || num1 == num3) 
     {
-        alert('축하합니다! 2개 숫자가 일치했습니다!\n100원 획득!');
-        point1 += 100;
+        alert('축하합니다! 2개 숫자가 일치했습니다!\n500원 획득!');
+        point1 += 500;
     }
     else{
         alert('아쉽게도 꽝입니다!\n획득 없음');
@@ -82,7 +82,7 @@ function checkResult() {
 
     point.innerHTML = `${point1}`;
 
-    if(point1 == 10000){
+    if(point1 == 20000){
         alert('성공!!!!\n(F5를 눌러 다시 시도하세요)')
     }
     
