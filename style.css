@@ -47,6 +47,8 @@ body, html {
     border: 8px solid rgb(218, 181, 32);
 }
 
+
+
 .start {
     background-color: #fdf79e;
     color: #000;
@@ -58,6 +60,9 @@ body, html {
     font-size: 48px;
     border: 8px solid rgb(218, 181, 32);
     cursor: pointer;
+}
+.start:active {
+    transform: scale(1.05);
 }
 
 .slots {
