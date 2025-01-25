@@ -65,6 +65,22 @@ body, html {
     transform: scale(1.05);
 }
 
+.money {
+    background-color: #fdf79e;
+    color: #000;
+    justify-content: space-between;
+    width: 700px;
+    height:9.73%;
+    padding: 20px;
+    text-align: center;
+    font-size: 48px;
+    border: 8px solid rgb(218, 181, 32);
+    cursor: pointer;
+}
+.money:active {
+    transform: scale(1.05);
+}
+
 .slots {
     display: flex;
     align-content: space-around;

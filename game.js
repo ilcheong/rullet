@@ -4,6 +4,7 @@ const slot1 = document.getElementById('slot1');
 const slot2 = document.getElementById('slot2');
 const slot3 = document.getElementById('slot3');
 const start = document.getElementById('start');
+const money = document.getElementById('money');
 
 let point = document.querySelector('.point');
 
@@ -25,6 +26,11 @@ function updateSlot(slot, duration) {
     }, 50);
     
     return interval;
+}
+
+function moneyUp(){
+    point1 += 1;
+    point.innerHTML = `${point1}`;
 }
 
 function spin() {
@@ -75,14 +81,13 @@ function checkResult() {
     }
 
     point.innerHTML = `${point1}`;
-    
-    if(point1 < 0){
-        alert('파산!!!!\n(F5를 눌러 다시 시도하세요)')
-    }
-    else if(point1 == 1000){
+
+    if(point1 == 1000){
         alert('성공!!!!\n(F5를 눌러 다시 시도하세요)')
     }
     
 }
 
 start.addEventListener('click', spin);
+
+money.addEventListener('click', moneyUp);
